@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background: #0d1117;
+    height: 100vh;
+    font-family: Georgia, serif;
+  }
+
+  h1{
+    color: #fff;
+  }
+
+.bar {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    display: flex;              /* Add this */
+    align-items: center;        /* Add this */
+    justify-content: center;    /* Optional: center horizontally */
+}
+
+.title {
+    color: #ffffff;
+    font-size: 2.1rem;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.4),
+      0 0 60px rgba(255, 255, 255, 0.3);
+    background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    margin: auto 12;
+  }
+
+  /* ...existing code... */
+
+.chapter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    padding: 60px 0 60px 0;
+    margin: 0;
+}
+
+.chapter-list li {
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.2),
+      0 0 60px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s;
+}
+
+.chapter-list li:hover {
+    transform: scale(1.15);
+}
+
+.text-button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+}
+
+.section-text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: Georgia, serif;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.section-button {
+    background-color: #d4a574;
+    color: #0d1117;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.section-button:hover {
+    transform: scale(1.05);
+    background-color: #e8c099;
+}
+
+.mainimg {
+    display: flex;              /* Add this */
+    align-items: center;        /* Add this */
+    justify-content: center;    /* Optional: center horizontally */
+}
+
+.image-with-buttons {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-with-buttons img {
+    position: relative;
+    z-index: 1;
+}
+
+.image-with-buttons .section-button {
+    position: absolute;
+    z-index: 2;
+}
+
+.image-with-buttons .section-button:first-of-type {
+    top: 350px;
+    left: -50px;
+}
+
+.image-with-buttons .section-button:last-of-type {
+    top: 30px;
+    right: -56px;
+}
+
+a {
+    text-decoration: none;
+}
