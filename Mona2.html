@@ -1,9 +1,87 @@
-<div style="width: 100%; height: 100%; position: relative; background: linear-gradient(229deg, #2A3245 50%, black 91%); overflow: hidden">
-    <div style="width: 1440px; height: 187px; left: 0px; top: 0px; position: absolute; background: radial-gradient(ellipse 50.00% 50.00% at 50.00% 50.00%, #2A3245 0%, black 100%); border: 1px rgba(0, 0, 0, 0.20) solid"></div>
-    <div style="width: 697px; height: 780px; left: 346px; top: 492px; position: absolute"></div>
-    <div style="left: 173px; top: 419px; position: absolute; color: white; font-size: 61px; font-family: Inria Serif; font-weight: 700; line-height: 73.20px; word-wrap: break-word">Tittle</div>
-    <div style="width: 950px; height: 333px; left: 229px; top: 656px; position: absolute; text-align: center; color: white; font-size: 39px; font-family: Inria Serif; font-weight: 400; line-height: 46.80px; word-wrap: break-word">Lorem ipsum dolor sit amet consectetur. Rhoncus nulla massa elit sollicitudin. Duis sed fermentum elementum quis feugiat nunc porta amet lorem. Odio mauris dolor eget quis. Mollis ornare aliquet ultricies suspendisse elit quam ipsum. Diam venenatis pellentesque lorem et aliquam lectus. In tellus in tempor quis. Cursus justo massa dolor risus amet.<br/>Nam viverra sit a adipiscing in. Adipiscing diam id dui scelerisque purus purus. Dignissim nascetur nunc platea.</div>
-    <div style="width: 505px; height: 120px; padding: 10px; left: 442px; top: 1348px; position: absolute; background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #A86865; border-radius: 30px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div style="text-align: center; color: rgba(0, 0, 0, 0.20); font-size: 61px; font-family: Inria Serif; font-weight: 700; line-height: 73.20px; word-wrap: break-word">BOTÓN</div>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(229deg, #2A3245 50%, black 91%);
+        font-family: "Inria Serif", serif;
+        color: white;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .header-gradient {
+        width: 100%;
+        height: 180px;
+        background: radial-gradient(ellipse at center, #2A3245 0%, black 100%);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .text-block {
+        font-size: 28px;
+        line-height: 1.4;
+        margin-bottom: 60px;
+    }
+
+    .button-box {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        background: linear-gradient(0deg, rgba(0,0,0,0.20), rgba(0,0,0,0.20)), #A86865;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-box div {
+        font-size: 52px;
+        font-weight: 700;
+        color: rgba(0,0,0,0.20);
+    }
+
+    /* --- RESPONSIVE --- */
+    @media(max-width: 700px) {
+        h1 {
+            font-size: 36px;
+        }
+        .text-block {
+            font-size: 22px;
+        }
+        .button-box div {
+            font-size: 40px;
+        }
+    }
+</style>
+
+<div class="header-gradient"></div>
+
+<div class="container">
+
+    <h1>Tittle</h1>
+
+    <div class="text-block">
+        Lorem ipsum dolor sit amet consectetur. Rhoncus nulla massa elit sollicitudin. Duis sed fermentum elementum quis feugiat nunc porta amet lorem. Odio mauris dolor eget quis. Mollis ornare aliquet ultricies suspendisse elit quam ipsum. Diam venenatis pellentesque lorem et aliquam lectus. In tellus in tempor quis. Cursus justo massa dolor risus amet.
+        <br><br>
+        Nam viverra sit a adipiscing in. Adipiscing diam id dui scelerisque purus purus. Dignissim nascetur nunc platea.
     </div>
+
+    <div class="button-box">
+        <div>BOTÓN</div>
+    </div>
+
 </div>
+
