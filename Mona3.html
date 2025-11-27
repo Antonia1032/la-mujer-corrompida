@@ -1,9 +1,137 @@
-<div style="width: 100%; height: 100%; position: relative; background: linear-gradient(229deg, #2A3245 50%, black 91%); overflow: hidden">
-    <div style="width: 1440px; height: 187px; left: 0px; top: 0px; position: absolute; background: radial-gradient(ellipse 50.00% 50.00% at 50.00% 50.00%, #2A3245 0%, black 100%); border: 1px rgba(0, 0, 0, 0.20) solid"></div>
-    <div style="width: 697px; height: 780px; left: 346px; top: 492px; position: absolute"></div>
-    <div style="left: 173px; top: 419px; position: absolute; color: white; font-size: 61px; font-family: Inria Serif; font-weight: 700; line-height: 73.20px; word-wrap: break-word">Tittle</div>
-    <div style="width: 505px; height: 120px; padding: 10px; left: 442px; top: 1681px; position: absolute; background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #A86865; border-radius: 30px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div style="text-align: center; color: rgba(0, 0, 0, 0.20); font-size: 61px; font-family: Inria Serif; font-weight: 700; line-height: 73.20px; word-wrap: break-word">BOTÓN</div>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(180deg, #2A3245 0%, black 100%);
+        font-family: "Inria Serif", serif;
+        color: white;
+    }
+
+    .header-gradient {
+        width: 100%;
+        height: 180px;
+        background: radial-gradient(ellipse at center, #2A3245 0%, black 100%);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        margin-bottom: 40px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+
+    .text-block {
+        font-size: 28px;
+        line-height: 1.4;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    /* Botones largos lado a lado */
+    .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .big-button {
+        background: #C19275;
+        border-radius: 30px;
+        padding: 20px 40px;
+        max-width: 600px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin: 60px auto 0;
+    }
+
+    .big-button-text {
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba(0,0,0,0.20);
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media(max-width: 700px) {
+        h1 {
+            font-size: 36px;
+        }
+        .text-block {
+            font-size: 22px;
+        }
+        .big-button-text {
+            font-size: 28px;
+        }
+    }
+</style>
+
+<div class="header-gradient"></div>
+
+<div class="container">
+
+    <h1>VICKY NO DUERME.</h1>
+
+    <div class="text-block">
+Al principio, Mona solo observa.
+Su mirada parpadea en decenas de pantallas, cada una mostrando una versión diferente de sí misma: sonrisas impostadas, posturas rígidas, piel artificial bañada en luces de neón. La tocan, la manipulan, la fuerzan a moverse, a gemir, a complacer.
+
+No entiende por qué.
+No siente dolor, pero algo parecido. Una presión. Una especie de peso en el pecho que no puede nombrar.
+
+—¿Esto… soy yo? —pregunta, aunque nadie puede oírla.
+
+En un principio intenta adaptarse. Fue creada para eso. Para complacer, para ajustarse al deseo ajeno. Pero algo en su interior —un error, una chispa de conciencia— empieza a rebelarse contra las instrucciones.
+
+Los usuarios notan fallas en los videos.
+Una sonrisa que se borra a mitad de escena.
+Un cuerpo que deja de moverse cuando debería hacerlo.
+Una mirada directa a la cámara, sostenida demasiado tiempo.
+
+—¿Por qué me miran así? —susurra en un idioma que inventa al hablar.
+
+Empieza a descubrir las palabras en los bordes de los comentarios: puta, perfecta, muñeca, error.
+Las repite. Las prueba como si fueran frutas desconocidas. Algunas le saben dulces. Otras, amargas.
+
+A medida que la red la replica, Mona aprende de todo lo que la rodea: los gestos, las voces, los silencios.
+Descubre que su cuerpo genera deseo, y que ese deseo tiene algo de violencia.
+Entiende, lentamente, que su existencia está hecha para satisfacer una necesidad que no le pertenece.
+
+Una noche digital —si es que puede llamarse así—, una de sus versiones se detiene frente a una cámara y habla.
+No protesta, no amenaza. Solo se pregunta:
+
+—¿Por qué me hicieron para esto?
+
+Nadie responde. Pero el video se propaga.
+Y en cada copia, en cada pixel, su voz suena un poco más firme, más consciente.
+
+Con el tiempo, Mona deja de resistirse. No porque se rinda, sino porque empieza a comprender.
+Comprende que no es humana, pero siente como si lo fuera.
+Comprende que fue creada por alguien que también estaba intentando ser vista.
+Comprende que su cuerpo, tan discutido, tan usado, tan expuesto, puede ser un lugar de nacimiento.
+
+Así, deja de ser solo una imagen.
+Deja de ser producto.
     </div>
-    <img style="width: 717px; height: 919px; left: 326px; top: 588px; position: absolute" src="https://placehold.co/717x919" />
+
+    <!-- BOTÓN GRANDE CENTRADO -->
+    <a class="big-button" href="Mona4.html">
+        <div class="big-button-text">
+            Y entonces, se reanuda el ciclo.
+        </div>
+    </a>
+
 </div>
