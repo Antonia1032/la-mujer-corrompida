@@ -14,17 +14,13 @@
       <div class="title">La mujer corrompida</div>
     </div>
   </header>
+ <div class="audio-box">
 <audio controls autoplay loop>
   <source src="song1.mp3" type="audio/mpeg">
+
 </audio>
-  <ul class="chapter-list">
-      <a href="index.html"><li>1</li></a> 
-      <a href="2.html"><li>2</li></a>
-      <a href="3.html"><li>3</li></a> 
-      <a href="4.html"><li>4</li></a> 
-      <a href="5.html"><li>5</li></a> 
-      <a href="6.html"><li>6</li></a> 
-  </ul>
+</div> 
+ 
 
   <div class="mainimg">
     <img src="./assets/img4.jpeg" alt="" width="400px">
@@ -32,37 +28,21 @@
   
 
   <section class="text-button-section">
-    <p class="section-text">El auditorio está lleno. Decenas de pantallas rodean el escenario. En las primeras filas, los ejecutivos de las productoras más grandes del mundo observan con los brazos cruzados, expectantes.
-
-Las luces bajan.
-El telón se levanta.
-En la pantalla principal, un ojo digital se abre lentamente. Luego, una mano saluda. Una sonrisa. Finalmente, aparece ella: una mujer.
-
-Su piel no es perfecta, tiene textura. Sus dientes son ligeramente desalineados. En su abdomen, pliegues sutiles. Sus brazos muestran un vello fino que brilla con la luz. Es hermosa, pero no de la manera habitual. Es humana.
+    <p class="section-text">El auditorio está lleno. Las luces bajan y, en la pantalla principal, aparece ella: una mujer digital con piel texturada, dientes ligeramente torcidos, pliegues en el abdomen y vello en los brazos. Humana. Real.
 
 Silencio.
 
-Nadie aplaude. Nadie se ríe. El aire se espesa.
+Entonces estallan las voces:
 
-Entonces, una voz rompe el silencio:
 —¿Esa cosa es la que nos van a vender?
-
-Otra le sigue:
-—¿Con esos dientes torcidos?
-
-Y otra:
-—¿Y esos rollos en el estómago?
-
-—¿Cómo se supone que se vista sexy con ese tipo de cuerpo?
-—Está muy plana.
-—Y a la vez muy gorda.
+—¿Con esos dientes?
+—¿Y esos rollos?
 —No tiene figura.
-—Ni se salva de cara.
 —¿Por qué le dejaron pelo corporal?
 
-Los murmullos se multiplican, se transforman en carcajadas. En menos de quince minutos, el auditorio se vacía.
+Los murmullos se convierten en risas. En quince minutos, el auditorio se vacía.
 
-El jefe de Vicky está rojo de furia. Este era el proyecto que iba a poner a la empresa en el mapa. Con solo una mirada, le indica que deben hablar. Urgentemente.
+El jefe de Vicky, rojo de furia, la mira: tienen que hablar. Urgentemente.
   <a href="5.html">
   <button class="section-button" style="background-color: #945353;">
     Vicky lo sigue, encogida de hombros, sin palabras.
@@ -80,3 +60,73 @@ El jefe de Vicky está rojo de furia. Este era el proyecto que iba a poner a la 
   </script>
 </body>
 </html>
+  <style>
+
+    /* 🔥 AUDIO ESTILIZADO */
+    .audio-box {
+      width: fit-content;
+      margin: 25px auto;
+      padding: 12px 16px;
+      background-color: #c19275; /* tono beige-rosado */
+      border-radius: 12px;
+      box-shadow: 0px 4px 14px rgba(0,0,0,0.25);
+    }
+
+    audio {
+      filter: invert(12%) sepia(12%) saturate(900%) hue-rotate(320deg) brightness(95%) contrast(90%);
+      /* Esto cambia el color del reproductor nativo para que combine */
+    }
+
+    /* Dropdown arriba a la derecha */
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .dropbtn {
+      background-color: #c19275;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #945353;
+    }
+
+    /* Botón principal */
+    .text-button-section {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+  </style>

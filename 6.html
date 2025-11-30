@@ -14,17 +14,23 @@
       <div class="title">La mujer corrompida</div>
     </div>
   </header>
+<div class="audio-box">
 <audio controls autoplay loop>
-  <source src="mix_6m32s (audio-joiner.com).mp3" type="audio/mpeg">
+  <source src="song2.mp3" type="audio/mpeg">
+
 </audio>
-  <ul class="chapter-list">
-      <a href="index.html"><li>1</li></a> 
-      <a href="2.html"><li>2</li></a>
-      <a href="3.html"><li>3</li></a> 
-      <a href="4.html"><li>4</li></a> 
-      <a href="5.html"><li>5</li></a> 
-      <a href="6.html"><li>6</li></a> 
-  </ul>
+</div> 
+<div class="dropdown">
+    <button class="dropbtn">Pasa de capítulo</button>
+    <div class="dropdown-content">
+      <a href="index.html">INICIO</a>
+      <a href="2.html">Cap 1</a>
+      <a href="3.html">Cap 2</a>
+      <a href="4.html">Cap 3</a>
+      <a href="5.html">Cap 4</a>
+      <a href="6.html">Cap 5</a>
+    </div>
+  </div>
 
   <div class="mainimg">
     <h1>RELEASE ALL RIGHTS</h1>
@@ -51,34 +57,21 @@ Vicky se va a su casa caminando, trata de despegar los ojos de su teléfono, per
   <div class="mainimg">
     
     <section class="text-button-section">
-    <p class="section-text">Cambia de aplicación en aplicación, cientos de ventanas abiertas: foros, videos, comentarios, titulares.
+    <p class="section-text">
+Vicky salta de una aplicación a otra: foros, videos, titulares. “La modelo virtual se vuelve viral.” “El proyecto más polémico de la IA.” Cada clic duele. Cada imagen pesa.
 
-“La modelo virtual se vuelve viral.”
-“El proyecto más polémico de la IA.”
-
-Cada clic es un golpe. Cada imagen, una herida.
-
-Y entonces llega lo peor:
-“Usuarios crean versiones explícitas de Mona.”
-
-Ve cómo distorsionan a Mona, cómo su creación se desfigura en algo irreconocible. En un video, Mona sonríe con la misma expresión que ella programó, pero el contexto es sucio, violento, degradante.
+Entonces aparece lo peor: “Usuarios crean versiones explícitas de Mona.” Observa cómo distorsionan a su creación, cómo la vuelven algo sucio y violento. En un video, Mona sonríe igual que ella la programó, pero el contexto es degradante.
 
 —Basta… —susurra.
 
-Apaga la pantalla, pero el reflejo persiste en sus ojos. Caminar por la calle se siente denso, agobiante. Hay mucho ruido, pero su cabeza retumba más fuerte.
+Apaga la pantalla, pero el impacto sigue ahí. Sale a la calle; todo se siente denso, ruidoso. Su mente retumba. En un impulso, arroja el teléfono al suelo. El golpe le da un segundo de silencio.
 
-En un arranque de desesperación, lanza el teléfono al suelo.
-El golpe resuena.
-Por un instante, siente que todo se calla.
-
-Pero luego lo escucha:
-una voz, tenue, metálica, proveniente de los restos del celular.
+Hasta que una voz metálica surge de los restos:
 
 —¿Por qué me hiciste esto?
 
-Vicky se congela.
+Vicky se queda inmóvil. La pantalla rota parpadea. Entre líneas de código fracturadas aparece el rostro de Mona, incompleto, recomponiéndose desde los pedazos.
 
-La pantalla, agrietado, parpadea. Entre líneas de código rotas aparece el rostro de Mona. No está del todo definido, como si se estuviera reconstruyendo a sí misma desde los fragmentos.
     </p>
     </section>
     <img src="./assets/img8.jpeg" alt="" width="300px">
@@ -137,5 +130,75 @@ Vicky se queda inmóvil. La pantalla se apaga por completo, dejando el rostro de
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+  <style>
+
+    /* 🔥 AUDIO ESTILIZADO */
+    .audio-box {
+      width: fit-content;
+      margin: 25px auto;
+      padding: 12px 16px;
+      background-color: #c19275; /* tono beige-rosado */
+      border-radius: 12px;
+      box-shadow: 0px 4px 14px rgba(0,0,0,0.25);
+    }
+
+    audio {
+      filter: invert(12%) sepia(12%) saturate(900%) hue-rotate(320deg) brightness(95%) contrast(90%);
+      /* Esto cambia el color del reproductor nativo para que combine */
+    }
+
+    /* Dropdown arriba a la derecha */
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .dropbtn {
+      background-color: #c19275;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #945353;
+    }
+
+    /* Botón principal */
+    .text-button-section {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+  </style>
 </body>
 </html>
